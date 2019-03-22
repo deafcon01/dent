@@ -1,15 +1,15 @@
 #!/bin/bash
 DATA_DIR="${DATUMS_PATH}/${DATASET_NAME}"
 MODEL_DIR="${MODEL_PATH}/${MODEL_NAME}"
-cp ./pipeline.config $HOME/pipeline.config
-echo "Confg file path : $HOME/pipeline.config"
+cp ./faster_rcnn_resnet_101_pet.config $HOME/pipeline.config
+echo "Config file path : $HOME/faster_rcnn_resnet_101_pet.config"
 
 if [ $# -ne 1 ]; then
     echo "Usage : bash process.sh <c/n>"
     exit 1
 elif [ $1 = "n" ]; then
-	sed -i "s|DATA_PATH|"${DATA_DIR}"|g" $HOME/pipeline.config
-	sed -i "s|MODEL_PATH|"${MODEL_DIR}"|g" $HOME/pipeline.config
+	sed -i "s|DATA_PATH|"${DATA_DIR}"|g" $HOME/faster_rcnn_resnet_101_pet.config
+	sed -i "s|MODEL_PATH|"${MODEL_DIR}"|g" $HOME/faster_rcnn_resnet_101_pet.config
 elif [ $1 = "c" ]; then
 	EXTRACT_PATH="/tmp/object-detection"
 	mkdir -p $EXTRACT_PATH
@@ -49,6 +49,6 @@ elif [ $1 = "c" ]; then
 	        fi
 	done
 
-	sed -i "s|DATA_PATH|"${EXTRACT_PATH}"|g" $HOME/pipeline.config
-	sed -i "s|MODEL_PATH|"${EXTRACT_PATH}"|g" $HOME/pipeline.config
+	sed -i "s|DATA_PATH|"${EXTRACT_PATH}"|g" $HOME/faster_rcnn_resnet_101_pet.config
+	sed -i "s|MODEL_PATH|"${EXTRACT_PATH}"|g" $HOME/faster_rcnn_resnet_101_pet.config
 fi
