@@ -1,0 +1,44 @@
+item{
+ name:"Tumour"
+ id: 1
+}
+item{
+ name:"boneloss"
+ id: 2
+}
+item{
+ name:"missing tooth"
+ id: 3
+}
+item{
+ name:"restoration"
+ id: 4
+}
+item{
+ name:"root stump"
+ id: 5
+}
+item{
+ name:"caries"
+ id: 6
+}
+item{
+ name:"peridontal lesion"
+ id: 7
+}
+item{
+ name:"FPD"
+ id: 8
+}
+item{
+ name:"periapical lesion"
+ id: 9
+}
+item{
+ name:"impaction"
+ id: 10
+}
+item{
+ name:"surgical plate"
+ id: 11
+}
