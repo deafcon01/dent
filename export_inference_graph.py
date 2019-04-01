@@ -152,7 +152,7 @@ def main(_):
       write_inference_graph=FLAGS.write_inference_graph)
 
   tf.gfile.Rename(FLAGS.output_directory+'/saved_model', FLAGS.output_directory+'/1')
- with tf.gfile.GFile(FLAGS.output_directory+'/1/variables/Dummy', 'w') as file:
+  with tf.gfile.GFile(FLAGS.output_directory+'/1/variables/Dummy', 'w') as file:
      file.write("dummy file")
 
 
