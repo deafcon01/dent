@@ -2,4 +2,7 @@ item{
  name:"boneloss"
  id: 1 
 }
-
+item{
+ name:"missing_tooth"
+ id: 2
+}
