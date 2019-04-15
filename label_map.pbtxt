@@ -6,3 +6,7 @@ item{
  name:"missing_tooth"
  id: 2
 }
+item{
+ name:"other"
+ id: 3
+}
