@@ -4,9 +4,9 @@ item{
 }
 item{
  name:"missing_tooth"
- id: 3
+ id: 2
 }
 item{
  name:"other"
- id: 2
+ id: 3
 }
