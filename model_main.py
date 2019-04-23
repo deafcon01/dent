@@ -115,6 +115,7 @@ def main(unused_argv):
     with tf.gfile.GFile(FLAGS.pipeline_config_path, 'r') as f:
         text_format.Merge(f.read(), pipeline_config)
     input_shape = None
+    tf.logging.info("****************************"
     input_type = 'image_tensor'
     export_dir = FLAGS.model_dir + '/inference'
     trained_checkpoint_prefix = tf.train.latest_checkpoint(FLAGS.model_dir, latest_filename=None)
